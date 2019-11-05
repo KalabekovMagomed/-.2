@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+	<h1>Калабеков Магомед ИУ4-12б</h1>
+	<h1>Задача №1</h1>
+<?php
+ echo "<select name=year>";
+    echo "<option value=\"Не указано\" selected>\"Не указано\"</option> ";
+    for($year = 1900; $year <= 2100; $year++) {
+        echo "<option value=\"$year\">$year</option>";
+    }
+    echo "</select>";
+
+?>
+   <h1>Задача №2</h1>
+   <?php
+   $koefa = 50;
+   $koefb = 10;
+   $koefc = 4;
+
+  If ($koefb*$koefb-4*$koefa*$koefc<0) {
+  echo "корней нет";
+} else if ($koefb*$koefb-4*$koefa*$koefc==0) {
+	echo "Оба корня одинаковые и равны x= ",-$koefb/(2*$koefa);
+} else {
+echo "Корни действительны: x1= ",(-$koefb+sqrt($koefb*$koefb-4*$koefa*$koefc))/(2*$koefa),"; x2= ",(-$koefb-sqrt($koefb*$koefb-4*$koefa*$koefc))/(2*$koefa);}
+?>
+</body>
+</html>
